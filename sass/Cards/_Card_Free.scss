@@ -1,0 +1,31 @@
+.Card_free{
+    border-radius: 10px;
+    overflow: hidden;
+    .Card_inner{
+        &_header{
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #fff;
+            background: linear-gradient(to right,rgb(2, 78, 139),rgb(81, 100, 185));
+            padding: 1.5rem 2rem;
+        }
+        .Price{
+            width: 100%;
+            margin:2rem auto;
+            text-align: center;
+            font-size: 7rem;
+            font-weight: 800;
+            color: white;
+            letter-spacing: 0.5rem;
+        }
+        .Pricing_card_items{
+            width: 100%;
+            text-align: center;
+            color: #0da5d3;
+            .Pricing_card_item{
+                margin: 1rem auto;
+            }
+        }
+
+    }
+}

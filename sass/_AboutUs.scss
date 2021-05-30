@@ -1,0 +1,102 @@
+#AboutUs{
+    width: 100%;
+    height: 100vh;
+    background: #444;
+    display: flex;
+    align-items: center;
+    color: #fff;
+   .AboutUs_heading{
+       flex: 1 1 30rem;
+       padding-left: 5rem;
+       h1{
+           font-size: 10rem;
+           position: relative;
+           padding: 1rem;
+           display: inline;
+           &:after{
+               position:absolute;
+               content: "";
+               width:80%;
+               height: 5px;
+               background: #fff;
+               top: 30%;
+               right: -90%;
+           }
+       }
+   }
+   .AboutUs_Video_Text{
+       flex: 1 1 30rem; 
+       height: 100%;
+       padding-top: 5rem;
+       padding-right: 5rem;
+     .video_section{
+         position: relative;
+         overflow: hidden;
+         &:hover .play_section{
+            bottom: 0%;
+            transition: bottom 0.5s ease;
+        }
+        .video{
+            width: 100%;
+        }
+        .play_section{
+            transition: bottom 0.5s ease;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            bottom: -11%;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            .pause_btn{
+                display: none;
+            }
+            .play_btn
+            ,.pause_btn{
+                font-size: 3rem;
+                cursor: pointer;
+            }
+            .video_progress_1{
+                position: absolute;
+                width: 100%;
+                height: 6px;
+                background: #000;
+                top: 0;
+                left: 0;    
+            }
+            .video_progress_2{
+                content: "";
+                    position:absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0%;
+                    height: 6px;
+                    background:violet;
+            }
+        }
+       
+     }
+       .video_text{
+        position: relative;
+        padding:12rem 3rem;
+        .text{
+            font-size: 3rem;
+        }
+        .icon_left,
+        .icon_right{
+            position: absolute;
+            font-size: 5rem;
+        }
+        .icon_left{
+            left: -3%;
+            top: 10%;
+        }
+        .icon_right{
+            bottom: 10%;
+            right: 3%;
+        }
+       }
+     
+     
+       
+   }
+}

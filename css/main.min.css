@@ -110,3 +110,61 @@ html { font-size: 62.5%; }
 .Btn_Burger .line:nth-child(1) { width: 50%; }
 
 .Btn_Burger .line:nth-child(3) { width: 50%; transform: translateX(100%); }
+
+#AboutUs { width: 100%; height: 100vh; background: #444; display: flex; align-items: center; color: #fff; }
+
+#AboutUs .AboutUs_heading { flex: 1 1 30rem; padding-left: 5rem; }
+
+#AboutUs .AboutUs_heading h1 { font-size: 10rem; position: relative; padding: 1rem; display: inline; }
+
+#AboutUs .AboutUs_heading h1:after { position: absolute; content: ""; width: 80%; height: 5px; background: #fff; top: 30%; right: -90%; }
+
+#AboutUs .AboutUs_Video_Text { flex: 1 1 30rem; height: 100%; padding-top: 5rem; padding-right: 5rem; }
+
+#AboutUs .AboutUs_Video_Text .video_section { position: relative; overflow: hidden; }
+
+#AboutUs .AboutUs_Video_Text .video_section:hover .play_section { bottom: 0%; transition: bottom 0.5s ease; }
+
+#AboutUs .AboutUs_Video_Text .video_section .video { width: 100%; }
+
+#AboutUs .AboutUs_Video_Text .video_section .play_section { transition: bottom 0.5s ease; background: rgba(0, 0, 0, 0.5); position: absolute; bottom: -11%; left: 0; width: 100%; padding: 1rem 2rem; }
+
+#AboutUs .AboutUs_Video_Text .video_section .play_section .pause_btn { display: none; }
+
+#AboutUs .AboutUs_Video_Text .video_section .play_section .play_btn, #AboutUs .AboutUs_Video_Text .video_section .play_section .pause_btn { font-size: 3rem; cursor: pointer; }
+
+#AboutUs .AboutUs_Video_Text .video_section .play_section .video_progress_1 { position: absolute; width: 100%; height: 6px; background: #000; top: 0; left: 0; }
+
+#AboutUs .AboutUs_Video_Text .video_section .play_section .video_progress_2 { content: ""; position: absolute; left: 0; top: 0; width: 0%; height: 6px; background: violet; }
+
+#AboutUs .AboutUs_Video_Text .video_text { position: relative; padding: 12rem 3rem; }
+
+#AboutUs .AboutUs_Video_Text .video_text .text { font-size: 3rem; }
+
+#AboutUs .AboutUs_Video_Text .video_text .icon_left, #AboutUs .AboutUs_Video_Text .video_text .icon_right { position: absolute; font-size: 5rem; }
+
+#AboutUs .AboutUs_Video_Text .video_text .icon_left { left: -3%; top: 10%; }
+
+#AboutUs .AboutUs_Video_Text .video_text .icon_right { bottom: 10%; right: 3%; }
+
+#Pricing { width: 100%; height: 100vh; background: #000; display: flex; align-items: center; justify-content: space-between; }
+
+#Pricing .Pricing_Heading { flex: 1 1 30rem; color: white; padding-left: 5rem; }
+
+#Pricing .Pricing_Heading h1 { font-size: 10rem; position: relative; display: inline-block; padding: 1rem 2rem; }
+
+#Pricing .Pricing_Heading h1::after { content: ""; position: absolute; width: 90%; height: 5px; background: #fff; top: 50%; right: -100%; border-radius: 10px; }
+
+#Pricing .swiper-container { width: 100%; z-index: 0; padding: 5rem 0; flex: 2 1 30rem; }
+
+#Pricing .swiper-container .swiper-slide, #Pricing .swiper-container .swiper_1 { width: 300px; height: 500px; background: #181b1d; background-position: center; background-size: cover; }
+
+.Card_free { border-radius: 10px; overflow: hidden; }
+
+.Card_free .Card_inner_header { font-size: 2rem; text-transform: uppercase; color: #fff; background: linear-gradient(to right, #024e8b, #5164b9); padding: 1.5rem 2rem; }
+
+.Card_free .Card_inner .Price { width: 100%; margin: 2rem auto; text-align: center; font-size: 7rem; font-weight: 800; color: white; letter-spacing: 0.5rem; }
+
+.Card_free .Card_inner .Pricing_card_items { width: 100%; text-align: center; color: #0da5d3; }
+
+.Card_free .Card_inner .Pricing_card_items .Pricing_card_item { margin: 1rem auto; }

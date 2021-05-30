@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <title> Business Site</title>
 </head>
 <body>
@@ -21,7 +28,6 @@
             <span class="line"></span><span class="line"></span><span class="line"></span>
         </div>
            <nav class="navbar">
-              
                <ul class="navbar_list">
                    <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
                    <li class="nav_item"><a href="#" class="nav_link">About</a></li>
@@ -43,7 +49,75 @@
            </h2>
            <button class="hero_btn">discover now</button>
        </section>
+       <!--Start AboutUs-->
+       <section id="AboutUs">
+           <div class="AboutUs_heading">
+               <h1 >
+                   AboutUs
+               </h1>
+           </div>
+           <div class="AboutUs_Video_Text">
+               <div class="video_section">
+                <video class="video">
+                    <source src="./Image/about-us-video.mp4" type="video/mp4">
+                 </video>
+                <div class="play_section">
+                    <div class="video_progress_1">
+                        
+                    </div>
+                    <div class="video_progress_2">
+                        
+                    </div>
+                    <i class="far fa-play-circle play_btn"></i>
+                    <i class="far fa-pause-circle pause_btn"></i>
+                   
+                  </div>
+               </div>
+               <div class="video_text">
+                   <div class="icon_left">
+                    <i class="fas fa-quote-left"></i>
+                   </div>
+                   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem assumenda eaque necessitatibus ipsum nostrum possimus voluptatum accusantium minima placeat cupiditate. Dicta dolor inventore omnis maxime natus esse? Dicta, dolorem molestiae?</p>
+                   <div class="icon_right">
+                    <i class="fas fa-quote-right"></i>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!--End AboutUs-->
+       <!--Start Pricing-->
+       <section id="Pricing">
+           <div class="Pricing_Heading">
+               <h1>Pricing</h1>
+           </div>
+        <div class="swiper-container mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide Card_free">
+                  <div class="Card_inner">
+                   <div class="Card_inner_header">
+                       free
+                   </div>
+                   <div class="Price">
+                       $0
+                   </div>
+                   <div class="Pricing_card_items">
+                       <h2 class="Pricing_card_item"><i class="fas fa-check"></i>Pricing_Card_Item</h2>
+                       <h2><i class="fas fa-check"></i>Pricing_Card_Item</h2>
+                       <h2><i class="fas fa-check"></i>Pricing_Card_Item</h2>
+                   </div>
+                  </div>
+              </div>
+              <div class="swiper-slide Card_basic">Slide 2</div>
+              <div class="swiper-slide Card_standard">Slide 3</div>
+              <div class="swiper-slide Card_premium">Slide 3</div>
+            </div>
+            </div>
+       </section>
+       <!--End Pricing-->
    </div>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="./Js/main.js"></script>
 </body> 
 </html>

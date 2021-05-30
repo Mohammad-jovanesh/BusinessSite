@@ -8,11 +8,66 @@
     opacity: 0;
     animation:Hide 1s ease 1.5s forwards;
     z-index: 1;
+    .logo{
+        flex: 1 1 30rem;
+        padding-left: 5rem;
+        letter-spacing: 2px;
+        h1{
+            font-size: 3rem;
+            color: #fff;
+            span{
+                color: rgb(79, 100, 114);
+                font-size: 3.4rem;
+                font-weight: bold;
+            }
+
+        }
+        
+    }
+    
+    @include Media(md){
+        .navbar{
+            width: 100%;
+            background: #444;
+            height: 100vh;
+            position:fixed;
+            top: 0;
+            left: -100%;
+            z-index: 500;
+            transition: left 0.5s ease;
+            .navbar_list{
+                @include DisplayFlex(column,center,space-around);
+                width:100%;
+                height: 100%;
+            }
+        }
+        
+        
+    }
+    .navbar{
+        flex: 1 1 30rem;
+        &_list{
+            @include DisplayFlex(row,center,space-around);
+            .nav_item{
+                .nav_link{
+                    color: #fff;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    transition: color 0.5s ease; 
+                    &:hover {
+                        color: rgb(233, 94, 94);
+                        transition: color 0.5s ease;
+                    }
+
+                }
+            }
+        }
+        
+    }
     &.btn_open{
         .navbar_list{
             right: 0%;
             transition: right 0.45s ease;
-            
         }
         .Btn_Burger{
             .line{
@@ -32,97 +87,7 @@
             transition: left 0.5s ease;
         }
     }
-    .Btn_Burger{
-        @include Media(md){
-            display: block !important;
-        }
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        top: 20%;
-        right: 5%;display: none;
-        z-index: 1000;
-        .line{
-            display: inline-block;
-            width: 40px;
-            height: 5px;
-            background-color: #fff;
-            transition: all 0.5s ease;
-            &:nth-child(1){
-                 width: 50%;
-                 
-            }
-            &:nth-child(3){
-                 width: 50%;
-                 transform: translateX(100%);
-                 
-           }
-        }
-       
-   
-    }
-   
-    .logo{
-        flex: 1 1 30rem;
-        padding-left: 5rem;
-        letter-spacing: 2px;
-        h1{
-            font-size: 3rem;
-            color: #fff;
-            span{
-                color: rgb(79, 100, 114);
-                font-size: 3.4rem;
-                font-weight: bold;
-            }
-
-        }
-        
-    }
-    .navbar{
-        
-        flex: 1 1 30rem;
-        @include Media(md){
-            .Btn_Burger{
-                display: block !important;
-            }
-            width: 100%;
-            background: red;
-            height: 100vh;
-            position:fixed;
-            top: 0;
-            left: -100%;
-            z-index: 500;
-            transition: left 0.5s ease;
-            .navbar_list{
-                @include DisplayFlex(column,center,space-around);
-                width:100%;
-                height: 100%;
-            }
-            
-        }
-        
-        
-       
-        &_list{
-            @include DisplayFlex(row,center,space-around);
-            .nav_item{
-                .nav_link{
-                    color: #fff;
-                    font-size: 2rem;
-                    text-transform: uppercase;
-                    transition: color 0.5s ease; 
-                    &:hover {
-                        color: rgb(233, 94, 94);
-                        transition: color 0.5s ease;
-                    }
-
-                }
-            }
-        }
-        
-    }
 }
-
 @keyframes Hide {
     from{
         transform: translateY(-20rem);

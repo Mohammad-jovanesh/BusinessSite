@@ -22,5 +22,10 @@
             @content;
         }
     }
+    @if($size == sm){
+        @media (max-width:500px) {
+            @content;
+        }
+    }
     
 }

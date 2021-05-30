@@ -1,0 +1,7 @@
+.Btn_Burger { width: 40px; height: 40px; position: fixed; top: 20%; right: 5%; display: none; z-index: 1000; background: red; }
+
+.Btn_Burger .line { display: inline-block; width: 40px; height: 5px; background-color: #fff; transition: all 0.5s ease; }
+
+.Btn_Burger .line:nth-child(1) { width: 50%; }
+
+.Btn_Burger .line:nth-child(3) { width: 50%; transform: translateX(100%); }

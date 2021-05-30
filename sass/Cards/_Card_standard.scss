@@ -1,7 +1,7 @@
-.Card_free{
+.Card_standard{
     .Card_inner{
         &_header{
-            background: linear-gradient(to right,rgb(2, 78, 139),rgb(81, 100, 185));
+            background: linear-gradient(to right, #a10c14, #e23b3b);
         }
        
         .Pricing_card_items{
@@ -12,7 +12,7 @@
         }
         .Btn_Choose{
             
-            background: linear-gradient(to right,rgb(2, 78, 139),rgb(81, 100, 185));
+            background: linear-gradient(to right, #a10c14, #e23b3b);
         }
 
     }

@@ -1,0 +1,24 @@
+.Card_basic{
+   
+    .Card_inner{
+        &_header{
+            
+            background: linear-gradient(to right, #946809, #bdba0e);
+          
+        }
+        
+        .Pricing_card_items{
+          
+            color: rgb(219, 230, 109);
+         
+           
+        }
+        .Btn_Choose{
+           
+            background: linear-gradient(to right,rgb(104, 102, 10),rgb(47, 51, 4));
+          
+        
+        }
+
+    }
+}

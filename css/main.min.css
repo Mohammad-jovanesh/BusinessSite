@@ -159,12 +159,40 @@ html { font-size: 62.5%; }
 
 #Pricing .swiper-container .swiper-slide, #Pricing .swiper-container .swiper_1 { width: 300px; height: 500px; background: #181b1d; background-position: center; background-size: cover; }
 
-.Card_free { border-radius: 10px; overflow: hidden; }
+.Card { border-radius: 10px; overflow: hidden; }
 
-.Card_free .Card_inner_header { font-size: 2rem; text-transform: uppercase; color: #fff; background: linear-gradient(to right, #024e8b, #5164b9); padding: 1.5rem 2rem; }
+.Card .Card_inner_header { font-size: 2rem; text-transform: uppercase; color: #fff; padding: 1.5rem 2rem; }
 
-.Card_free .Card_inner .Price { width: 100%; margin: 2rem auto; text-align: center; font-size: 7rem; font-weight: 800; color: white; letter-spacing: 0.5rem; }
+.Card .Card_inner .Price { width: 100%; margin: 2rem auto; text-align: center; font-size: 7rem; font-weight: 800; color: white; letter-spacing: 0.5rem; }
 
-.Card_free .Card_inner .Pricing_card_items { width: 100%; text-align: center; color: #0da5d3; }
+.Card .Card_inner .Pricing_card_items { width: 100%; text-align: center; color: #dbe66d; font-size: 1.5rem; }
 
-.Card_free .Card_inner .Pricing_card_items .Pricing_card_item { margin: 1rem auto; }
+.Card .Card_inner .Pricing_card_items .Pricing_card_item { margin: 2rem auto; }
+
+.Card .Card_inner .Pricing_card_items .Pricing_card_item i { margin-right: 1rem; }
+
+.Card .Card_inner .Btn_Choose { font-size: 2rem; color: #fff; padding: 1.5rem 3rem; width: 80%; display: inline-block; text-align: center; margin-left: 10%; border-radius: 10px; margin-top: 2rem; text-transform: uppercase; }
+
+.Card_free .Card_inner_header { background: linear-gradient(to right, #024e8b, #5164b9); }
+
+.Card_free .Card_inner .Pricing_card_items { color: #0da5d3; }
+
+.Card_free .Card_inner .Btn_Choose { background: linear-gradient(to right, #024e8b, #5164b9); }
+
+.Card_basic .Card_inner_header { background: linear-gradient(to right, #946809, #bdba0e); }
+
+.Card_basic .Card_inner .Pricing_card_items { color: #dbe66d; }
+
+.Card_basic .Card_inner .Btn_Choose { background: linear-gradient(to right, #68660a, #2f3304); }
+
+.Card_standard .Card_inner_header { background: linear-gradient(to right, #a10c14, #e23b3b); }
+
+.Card_standard .Card_inner .Pricing_card_items { color: #0da5d3; }
+
+.Card_standard .Card_inner .Btn_Choose { background: linear-gradient(to right, #a10c14, #e23b3b); }
+
+.Card_premium .Card_inner_header { background: linear-gradient(to right, #0b7e48, #3be286); }
+
+.Card_premium .Card_inner .Pricing_card_items { color: #0da5d3; }
+
+.Card_premium .Card_inner .Btn_Choose { background: linear-gradient(to right, #0b7e48, #3be286); }

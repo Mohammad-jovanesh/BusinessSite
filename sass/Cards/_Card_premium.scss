@@ -1,7 +1,7 @@
-.Card_free{
+.Card_premium{
     .Card_inner{
         &_header{
-            background: linear-gradient(to right,rgb(2, 78, 139),rgb(81, 100, 185));
+            background: linear-gradient(to right, #0b7e48, #3be286);
         }
        
         .Pricing_card_items{
@@ -12,7 +12,7 @@
         }
         .Btn_Choose{
             
-            background: linear-gradient(to right,rgb(2, 78, 139),rgb(81, 100, 185));
+            background: linear-gradient(to right, #0b7e48, #3be286);
         }
 
     }

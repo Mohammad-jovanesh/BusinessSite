@@ -1,0 +1,26 @@
+@mixin DisplayFlex($dir:row,$align:center,$jus:center) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $jus;
+}
+
+
+@mixin  Media($size) {
+    @if($size == xl){
+        @media (max-width:1200px) {
+            @content;
+        }
+    }
+    @if($size == lg){
+        @media (max-width:1000px) {
+            @content;
+        }
+    }
+    @if($size == md){
+        @media (max-width:720px) {
+            @content;
+        }
+    }
+    
+}

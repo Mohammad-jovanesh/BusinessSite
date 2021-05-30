@@ -1,0 +1,173 @@
+#hero{
+    width: 100%;
+    min-height: 100vh;
+    background:url(../Image/dark-bg.jpeg);
+    @include DisplayFlex(column,center,center);
+   color: #fff;
+   .hero_heading{
+       margin-bottom: 10rem;
+       perspective: 50rem;
+       overflow: hidden;
+       width: 100%;
+       min-height: 20vh;
+       text-align: center;
+       animation: FadeAnime 0.5s linear forwards 1s;
+       visibility: hidden;
+       opacity: 0;
+       @include Media(xl){
+           
+        min-height: 30vh;
+        
+       }
+       @include Media(lg){
+           
+            width: 90%;
+            margin: 0rem auto 2rem!important;
+            span{
+                font-size: 8.5rem !important;
+                padding: 1rem;
+                height: 100%;
+                width: 100%;
+                
+            }
+            .heading_2,.heading_4{
+                line-height: 30vh;
+            }
+        }
+        @include Media(md){
+            min-height: 30vh !important;
+            span{
+                font-size: 7.5rem !important;
+                
+            }
+          
+        } 
+        
+        
+    
+       span{
+           font-size: 12rem;
+           font-weight: 600;
+           text-transform: uppercase;
+           text-shadow: 0.2rem 0.2rem 0.2rem rgba(170, 160, 160, 0.5);
+           font-family: 'Anton', sans-serif;
+           justify-content: center;
+           letter-spacing: 1.5rem;
+           position:absolute;
+           left: 0%;
+           top: 0%;
+           transform:translateZ(8rem);
+           opacity: 0;
+           width: 100%;
+           animation: Anime 12s linear infinite,
+
+       }
+    //    .heading_1{
+    //        animation:Anime 4s linear  0s infinite;
+    //    }
+    //    .heading_2{
+    //     animation:Anime 4s linear  2s infinite;
+    // }
+    @for $x from 1 through 4{
+        .heading_#{$x}{
+            animation-delay:($x - 1)*3s;
+        }
+    }
+       
+   }
+   @include Media(md){
+    .hero_content{
+        font-size: 2.4rem !important;
+        margin: 2rem auto !important;
+
+    }
+    .hero_btn{
+
+    }
+   }
+   .hero_content{
+    font-size: 3.5rem;
+    margin-bottom: 6rem;
+    background:rgba(0,0,0,0.5);
+    padding: 3rem 15rem;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    animation:FadeAnime 0.5s linear forwards;
+}
+.hero_btn{
+    animation:FadeAnime 1s linear forwards 0.5s;
+    background-color: red;
+    outline: none;
+    border:none ;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 7rem;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    &:hover::before{
+        left: 100%;
+        transition: left 0.5s ease;
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right,transparent,#fff,transparent);
+        position:absolute;
+        top: 0;
+        left: -100%;
+        transform: skewX(-30deg);
+        transition: left 0.5s ease;
+
+    }
+}
+}
+
+@keyframes Anime {
+    0%{
+     transform: translateZ(8rem);
+     opacity: 0;
+     letter-spacing: 1.5rem;
+     
+    }
+    3%{
+     transform: translateZ(0);
+     opacity: 1;
+     letter-spacing: 1.5rem;
+    }
+    20%{
+     transform: translateZ(0);
+     opacity: 1;
+     letter-spacing: 1.5rem;
+    }
+    25%{
+        transform: translateZ(3rem);
+     opacity: 0;
+     letter-spacing: 3rem;
+     
+    }
+    100%{
+     transform: translateZ(8rem);
+     opacity: 0;
+     letter-spacing: 3rem;
+    }
+}
+@keyframes FadeAnime {
+ from{
+     transform: translateY(-5rem);
+     opacity: 0;
+     visibility: hidden;
+ }
+ to{
+     opacity: 1;
+     transform: translateY(-0);
+     visibility: visible;
+ }
+}
+

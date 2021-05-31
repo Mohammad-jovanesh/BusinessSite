@@ -2,6 +2,8 @@
 
 html { font-size: 62.5%; }
 
+a { text-decoration: none; }
+
 .container { width: 100%; max-width: 2400px; height: auto; margin: auto; overflow: hidden !important; }
 
 .header { width: 100%; min-height: 10vh; background: rgba(0, 0, 0, 0.3); position: fixed; display: flex; flex-direction: row; align-items: center; justify-content: center; transform: translateY(-20rem); opacity: 0; animation: Hide 1s ease 1.5s forwards; z-index: 1; }
@@ -196,3 +198,41 @@ html { font-size: 62.5%; }
 .Card_premium .Card_inner .Pricing_card_items { color: #0da5d3; }
 
 .Card_premium .Card_inner .Btn_Choose { background: linear-gradient(to right, #0b7e48, #3be286); }
+
+#Conatct { width: 100%; height: 100vh; background-color: #292828; display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap; padding: 5rem 5rem 3rem; }
+
+#Conatct .Conatct_heading { flex: 1 1 30rem; }
+
+#Conatct .Conatct_heading h1 { font-size: 10rem; color: #fff; position: relative; display: inline-block; padding: 1rem 2rem; }
+
+#Conatct .Conatct_heading h1::after { position: absolute; content: ""; width: 70%; height: 7px; background-color: #fff; top: 50%; right: -70%; border-radius: 7px; }
+
+#Conatct .Conatct_input_icon { flex: 2 1 40rem; }
+
+#Conatct .Conatct_input_icon .icons { display: flex; flex-direction: row; align-items: flex-start; justify-content: space-evenly; margin-bottom: 5rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 200px; height: 200px; color: #fff; padding: 1rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item a { color: #fff; }
+
+#Conatct .Conatct_input_icon .icons .icon_item i { font-size: 5rem; color: #830d0d; margin-bottom: 3rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item .icon_head { font-size: 3rem; text-transform: uppercase; font-weight: 800; margin-bottom: 2rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item .Phone_Num_1 { font-size: 2rem; margin-bottom: 1rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item .Phone_Num_2, #Conatct .Conatct_input_icon .icons .icon_item .Location_address, #Conatct .Conatct_input_icon .icons .icon_item .Email_link { font-size: 2rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item .Email_link { word-break: break-all; width: 95%; text-align: center; margin-top: 1.5rem; }
+
+#Conatct .Conatct_input_icon .icons .icon_item .Location_address { justify-self: flex-end; margin-top: 2.5rem; }
+
+#Conatct .Conatct_input_icon .Inputs .Inputs_heading { color: #fff; font-size: 5rem; text-transform: uppercase; text-align: center; margin-bottom: 5rem; }
+
+#Conatct .Conatct_input_icon .Inputs .MyForm { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; }
+
+#Conatct .Conatct_input_icon .Inputs .MyForm .input { width: 80%; height: 5rem; margin: 1rem; padding: 1rem; font-size: 2rem; }
+
+#Conatct .Conatct_input_icon .Inputs .MyForm #Massage { width: 80%; height: 20rem; resize: none; padding: 3rem 2rem; font-size: 2.5rem; color: #444; margin-top: 1rem; margin-bottom: 3rem; }
+
+#Conatct .Conatct_input_icon .Inputs .MyForm .Btn_submit { width: 80%; font-size: 3rem; text-transform: uppercase; color: #fff; background-color: #a01b1b; padding: 1.5rem 3rem; outline: none; border-color: #a01b1b; cursor: pointer; }

@@ -1,12 +1,32 @@
 #Pricing{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    @include DisplayFlex(row,center,space-between);
+    @include Media (xl){
+        padding-top: 5rem;
+        .Pricing_Heading{
+            text-align: center !important;
+            margin-bottom: 10rem;
+            h1{
+                &::after{
+                    top: 120% !important;
+                    right:0% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        .swiper-container{
+            margin: 3rem auto 15rem !important;
+        }
+    }
+
+       
+        
+        
     .Pricing_Heading{
-        flex: 1 1 30rem;
+        flex: 1 1 70rem;
         color: white;
         padding-left: 5rem;
         h1{
@@ -30,7 +50,7 @@
         width: 100%;
         z-index: 0;
         padding: 5rem 0;
-        flex: 2 1 30rem;
+        flex: 2 1 70rem;
         .swiper-slide,
         .swiper_1{
             width: 300px;

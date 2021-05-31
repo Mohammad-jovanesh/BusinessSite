@@ -113,15 +113,29 @@ a { text-decoration: none; }
 
 .Btn_Burger .line:nth-child(3) { width: 50%; transform: translateX(100%); }
 
-#AboutUs { width: 100%; height: 100vh; background: #444; display: flex; align-items: center; color: #fff; }
+#AboutUs { width: 100%; min-height: 100vh; background: #444; display: flex; align-items: center; flex-wrap: wrap; color: #fff; }
 
-#AboutUs .AboutUs_heading { flex: 1 1 30rem; padding-left: 5rem; }
+@media (max-width: 500px) { #AboutUs .AboutUs_heading h1 { font-size: 5rem !important; }
+  #AboutUs .AboutUs_Video_Text .video_text { padding: 7rem 0rem !important; }
+  #AboutUs .AboutUs_Video_Text .video_text .text { font-size: 2rem !important; width: 100%; }
+  #AboutUs .AboutUs_Video_Text .video_text .icon_left, #AboutUs .AboutUs_Video_Text .video_text .icon_right { font-size: 2rem !important; } }
+
+@media (max-width: 1200px) { #AboutUs .AboutUs_heading { padding-left: 0 !important; margin-bottom: 10rem; margin-top: 10rem; text-align: center; }
+  #AboutUs .AboutUs_heading h1:after { height: 3rem; right: 0% !important; top: 120% !important; width: 100% !important; }
+  #AboutUs .AboutUs_Video_Text { padding: 1rem 2rem !important; flex: 1 1 70rem !important; }
+  #AboutUs .AboutUs_Video_Text .video_section { width: 90%; margin-left: 5%; }
+  #AboutUs .AboutUs_Video_Text .video_section .video { width: 100%; }
+  #AboutUs .AboutUs_Video_Text .video_section .play_btn, #AboutUs .AboutUs_Video_Text .video_section .pause_btn { font-size: 5rem !important; padding: 1rem; }
+  #AboutUs .AboutUs_Video_Text .video_text { width: 90%; margin-left: 5%; }
+  #AboutUs .AboutUs_Video_Text .video_text .icon_left { left: 0 !important; } }
+
+#AboutUs .AboutUs_heading { flex: 1 1 70rem; padding-left: 5rem; }
 
 #AboutUs .AboutUs_heading h1 { font-size: 10rem; position: relative; padding: 1rem; display: inline; }
 
 #AboutUs .AboutUs_heading h1:after { position: absolute; content: ""; width: 80%; height: 5px; background: #fff; top: 30%; right: -90%; }
 
-#AboutUs .AboutUs_Video_Text { flex: 1 1 30rem; height: 100%; padding-top: 5rem; padding-right: 5rem; }
+#AboutUs .AboutUs_Video_Text { flex: 1 1 50rem; height: 100%; padding-top: 5rem; padding-right: 5rem; }
 
 #AboutUs .AboutUs_Video_Text .video_section { position: relative; overflow: hidden; }
 
@@ -129,7 +143,10 @@ a { text-decoration: none; }
 
 #AboutUs .AboutUs_Video_Text .video_section .video { width: 100%; }
 
-#AboutUs .AboutUs_Video_Text .video_section .play_section { transition: bottom 0.5s ease; background: rgba(0, 0, 0, 0.5); position: absolute; bottom: -11%; left: 0; width: 100%; padding: 1rem 2rem; }
+#AboutUs .AboutUs_Video_Text .video_section .play_section { transition: bottom 0.5s ease; background: rgba(0, 0, 0, 0.5); position: absolute; bottom: -100%; left: 0; width: 100%; padding: 1rem 2rem; }
+
+@media (max-width: 1200px) { #AboutUs .AboutUs_Video_Text .video_section .play_section { bottom: 0% !important; }
+  #AboutUs .AboutUs_Video_Text .video_section .play_section .play_btn, #AboutUs .AboutUs_Video_Text .video_section .play_section .pause_btn { font-size: 2.5rem !important; padding: 1rem 0 0 !important; } }
 
 #AboutUs .AboutUs_Video_Text .video_section .play_section .pause_btn { display: none; }
 
@@ -149,15 +166,20 @@ a { text-decoration: none; }
 
 #AboutUs .AboutUs_Video_Text .video_text .icon_right { bottom: 10%; right: 3%; }
 
-#Pricing { width: 100%; height: 100vh; background: #000; display: flex; align-items: center; justify-content: space-between; }
+#Pricing { width: 100%; min-height: 100vh; background: #000; flex-wrap: wrap; display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
 
-#Pricing .Pricing_Heading { flex: 1 1 30rem; color: white; padding-left: 5rem; }
+@media (max-width: 1200px) { #Pricing { padding-top: 5rem; }
+  #Pricing .Pricing_Heading { text-align: center !important; margin-bottom: 10rem; }
+  #Pricing .Pricing_Heading h1::after { top: 120% !important; right: 0% !important; width: 100% !important; }
+  #Pricing .swiper-container { margin: 3rem auto 15rem !important; } }
+
+#Pricing .Pricing_Heading { flex: 1 1 70rem; color: white; padding-left: 5rem; }
 
 #Pricing .Pricing_Heading h1 { font-size: 10rem; position: relative; display: inline-block; padding: 1rem 2rem; }
 
 #Pricing .Pricing_Heading h1::after { content: ""; position: absolute; width: 90%; height: 5px; background: #fff; top: 50%; right: -100%; border-radius: 10px; }
 
-#Pricing .swiper-container { width: 100%; z-index: 0; padding: 5rem 0; flex: 2 1 30rem; }
+#Pricing .swiper-container { width: 100%; z-index: 0; padding: 5rem 0; flex: 2 1 70rem; }
 
 #Pricing .swiper-container .swiper-slide, #Pricing .swiper-container .swiper_1 { width: 300px; height: 500px; background: #181b1d; background-position: center; background-size: cover; }
 
@@ -199,19 +221,28 @@ a { text-decoration: none; }
 
 .Card_premium .Card_inner .Btn_Choose { background: linear-gradient(to right, #0b7e48, #3be286); }
 
-#Conatct { width: 100%; height: 100vh; background-color: #292828; display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap; padding: 5rem 5rem 3rem; }
+#Conatct { width: 100%; min-height: 100vh; background-color: #292828; display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap; padding: 5rem 5rem 3rem; }
 
-#Conatct .Conatct_heading { flex: 1 1 30rem; }
+@media (max-width: 1200px) { #Conatct .Conatct_heading { text-align: center; margin-bottom: 10rem; }
+  #Conatct .Conatct_heading h1::after { width: 100% !important; top: 120% !important; right: 0% !important; }
+  #Conatct .Inputs { margin-bottom: 5rem; }
+  #Conatct .Inputs .Inputs_heading { margin-top: 10rem; } }
+
+#Conatct .Conatct_heading { flex: 1 1 70rem; }
 
 #Conatct .Conatct_heading h1 { font-size: 10rem; color: #fff; position: relative; display: inline-block; padding: 1rem 2rem; }
 
 #Conatct .Conatct_heading h1::after { position: absolute; content: ""; width: 70%; height: 7px; background-color: #fff; top: 50%; right: -70%; border-radius: 7px; }
 
-#Conatct .Conatct_input_icon { flex: 2 1 40rem; }
+#Conatct .Conatct_input_icon { flex: 2 1 70rem; }
 
-#Conatct .Conatct_input_icon .icons { display: flex; flex-direction: row; align-items: flex-start; justify-content: space-evenly; margin-bottom: 5rem; }
+#Conatct .Conatct_input_icon .icons { display: flex; flex-direction: row; align-items: flex-start; justify-content: space-evenly; margin-bottom: 5rem; flex-wrap: wrap; }
 
-#Conatct .Conatct_input_icon .icons .icon_item { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 200px; height: 200px; color: #fff; padding: 1rem; }
+@media (max-width: 720px) { #Conatct .Conatct_input_icon .icons .Email { margin: 5rem auto 2rem; } }
+
+@media (max-width: 500px) { #Conatct .Conatct_input_icon .icons .icon_item { margin: 1rem; } }
+
+#Conatct .Conatct_input_icon .icons .icon_item { flex: 1 1 20rem; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 200px; height: 200px; color: #fff; padding: 1rem; }
 
 #Conatct .Conatct_input_icon .icons .icon_item a { color: #fff; }
 
@@ -237,10 +268,14 @@ a { text-decoration: none; }
 
 #Conatct .Conatct_input_icon .Inputs .MyForm .Btn_submit { width: 80%; font-size: 3rem; text-transform: uppercase; color: #fff; background-color: #a01b1b; padding: 1.5rem 3rem; outline: none; border-color: #a01b1b; cursor: pointer; }
 
-#Footer { width: 100%; min-height: 10vh; background: #000; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+#Footer { width: 100%; min-height: 10vh; background: #000; display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap; }
 
-#Footer .Footer_nav { flex: 1 1 30rem; padding-left: 10rem; }
+@media (max-width: 1200px) { #Footer .Footer_nav { padding: 5rem 1rem !important; width: 100%; text-align: center; display: flex; flex-direction: row; align-items: center; justify-content: space-evenly; }
+  #Footer .Footer_nav .Footer_link { margin-right: 0 !important; }
+  #Footer .Footer_CopyRigth { text-align: center; width: 100%; padding: 0 1rem 3rem !important; } }
+
+#Footer .Footer_nav { flex: 1 1 70rem; padding-left: 10rem; }
 
 #Footer .Footer_nav .Footer_link { color: #fff; margin-right: 5rem; font-size: 2.5rem; text-transform: uppercase; font-weight: 800; }
 
-#Footer .Footer_CopyRigth { flex: 1 1 30rem; text-align: center; font-size: 1.2rem; color: #fff; }
+#Footer .Footer_CopyRigth { flex: 1 1 70rem; text-align: center; font-size: 1.2rem; color: #fff; }

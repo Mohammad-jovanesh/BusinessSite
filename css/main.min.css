@@ -236,3 +236,11 @@ a { text-decoration: none; }
 #Conatct .Conatct_input_icon .Inputs .MyForm #Massage { width: 80%; height: 20rem; resize: none; padding: 3rem 2rem; font-size: 2.5rem; color: #444; margin-top: 1rem; margin-bottom: 3rem; }
 
 #Conatct .Conatct_input_icon .Inputs .MyForm .Btn_submit { width: 80%; font-size: 3rem; text-transform: uppercase; color: #fff; background-color: #a01b1b; padding: 1.5rem 3rem; outline: none; border-color: #a01b1b; cursor: pointer; }
+
+#Footer { width: 100%; min-height: 10vh; background: #000; display: flex; flex-direction: row; align-items: center; justify-content: center; }
+
+#Footer .Footer_nav { flex: 1 1 30rem; padding-left: 10rem; }
+
+#Footer .Footer_nav .Footer_link { color: #fff; margin-right: 5rem; font-size: 2.5rem; text-transform: uppercase; font-weight: 800; }
+
+#Footer .Footer_CopyRigth { flex: 1 1 30rem; text-align: center; font-size: 1.2rem; color: #fff; }
